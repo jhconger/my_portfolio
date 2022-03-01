@@ -7,7 +7,7 @@ function LoadingMessage() {
 
     return (
         <div className="App">
-            <video width="750" height="500" autoPlay loop muted>
+            <video width="750" height="500" autoPlay  controls muted>
                 <source src={myVideo} type="video/mp4"/>
             </video>
         </div>
@@ -32,7 +32,7 @@ function withSplashScreen(WrappedComponent) {
                     this.setState({
                         loading: false,
                     });
-                }, 20000)
+                }, 22000)
             } catch (err) {
                 console.log(err);
                 this.setState({
