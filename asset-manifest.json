@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.2b01bec8.css",
+    "main.js": "/my_portfolio/static/js/main.f7dd8be7.js",
+    "static/media/HartLogoVid.mp4": "/my_portfolio/static/media/HartLogoVid.9d2d0cd5cabf42272b12.mp4",
+    "static/media/ParticleAnimation.gif": "/my_portfolio/static/media/ParticleAnimation.db1f2c302d2c83f033a1.gif",
+    "static/media/HART LOGO copy 2.png": "/my_portfolio/static/media/HART LOGO copy 2.ee56de42d4c979a6e98f.png",
+    "index.html": "/my_portfolio/index.html",
+    "main.2b01bec8.css.map": "/my_portfolio/static/css/main.2b01bec8.css.map",
+    "main.f7dd8be7.js.map": "/my_portfolio/static/js/main.f7dd8be7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b01bec8.css",
+    "static/js/main.f7dd8be7.js"
+  ]
+}
