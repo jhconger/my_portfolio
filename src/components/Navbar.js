@@ -28,9 +28,9 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        TRVL
-                        <i className='fab fa-typo3' />
+                    <Link to='/' className='navbar-logo'  onClick={closeMobileMenu}>
+                        Justin Hart Conger
+                        <img src={require("../public/images/HART LOGO copy 2.png")}/>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -47,7 +47,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                Services
+                                About
                             </Link>
                         </li>
                         <li className='nav-item'>
@@ -56,7 +56,7 @@ function Navbar() {
                                 className='nav-links'
                                 onClick={closeMobileMenu}
                             >
-                                Products
+                                Projects
                             </Link>
                         </li>
 
@@ -66,11 +66,11 @@ function Navbar() {
                                 className='nav-links-mobile'
                                 onClick={closeMobileMenu}
                             >
-                                Sign Up
+                                Contact
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {button && <Button buttonStyle='btn--outline'>Contact</Button>}
                 </div>
             </nav>
         </>
