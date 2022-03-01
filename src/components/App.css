@@ -1,0 +1,15 @@
+.preloader {
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url('public/images/videos/HartLogoVid.mp4');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
