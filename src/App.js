@@ -7,7 +7,7 @@ import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 import React, {Component, Fragment} from 'react';
-import withSplashScreen from './components/withSplashScreen';
+import withSplashScreen from './components/withSplashScreen'
 
 
 

@@ -8,12 +8,7 @@
 }
 
 .splash-screen .loading-dot {
-    font-size: 100px;
-    margin-top: -80px;
-    position: relative;
-    animation: ease-in-out infinite alternate;
-    animation-name: run;
-    animation-duration: 1.2s;
+    /*background-image: url("src/public/Videos/HartLogoVid.mp4");*/
 }
 
 @keyframes run {

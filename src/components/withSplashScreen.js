@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
-import auth0Client from '../Auth';
-import './splash-screen.css';
+import './withSplashScreen.css';
+import ReactPlayer from "react-player";
+import myVideo from "../public/Videos/HartLogoVid.mp4";
 
 function LoadingMessage() {
+
     return (
-        <div className="splash-screen">
-            Wait a moment while we load your app.
-            <div className="loading-dot">.</div>
+        <div className="App">
+            <video width="750" height="500" autoPlay loop muted>
+                <source src={myVideo} type="video/mp4"/>
+            </video>
         </div>
+            // <ReactPlayer url={myVideo} autoPlay loop muted/>
     );
 }
 
@@ -16,18 +20,19 @@ function withSplashScreen(WrappedComponent) {
         constructor(props) {
             super(props);
             this.state = {
+                playing: true,
                 loading: true,
+                muted: true,
             };
         }
 
         async componentDidMount() {
             try {
-                await auth0Client.loadSession();
                 setTimeout(() => {
                     this.setState({
                         loading: false,
                     });
-                }, 1500)
+                }, 20000)
             } catch (err) {
                 console.log(err);
                 this.setState({
