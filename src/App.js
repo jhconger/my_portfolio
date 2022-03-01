@@ -6,50 +6,32 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
-
-import React, { useEffect, useState } from "react";
-
-
+import React, {Component, Fragment} from 'react';
+import withSplashScreen from './components/withSplashScreen';
 
 
 
 
 
-        const App = (props) => {
-            const loadDataOnlyOnce = () => {
-                $(window).load(function () {
-                    setTimeout(function () {
-                        $('.preloader')('slow');
-                    }, 9000);
 
-                });
+class App extends Component {
+    render() {
 
-
-            }
-    return (
-        <>
-            <Router>
-                <Navbar />
-                <Switch>
-                    <Route path='/' exact component={Home} />
-                    <Route path='/services' component={Services} />
-                    <Route path='/products' component={Products} />
-                    <Route path='/sign-up' component={SignUp} />
-                </Switch>
-            </Router>
-        </>
-    );
+        return (
+            <Fragment>
+            <>
+                <Router>
+                    <Navbar/>
+                    <Switch>
+                        <Route path='/' exact component={Home}/>
+                        <Route path='/services' component={Services}/>
+                        <Route path='/products' component={Products}/>
+                        <Route path='/sign-up' component={SignUp}/>
+                    </Switch>
+                </Router>
+            </>
+            </Fragment>
+        );
+    }
 }
-// function $(window) {
-//
-// }
-//
-// $(window).load(function () {
-//     setTimeout(function () {
-//         $('.preloader')('slow');
-//     }, 9000);
-//
-// });
-    // This function will called only once
-
-export default App;
+export default withSplashScreen(App);
